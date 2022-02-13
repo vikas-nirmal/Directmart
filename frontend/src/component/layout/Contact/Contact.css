@@ -1,0 +1,123 @@
+.contactContainer {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(78, 81, 255),
+    rgb(74, 137, 189)
+  );
+  position: fixed;
+}
+
+.contactsection{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: rgb(255, 255, 255);
+  width: 80vw;
+  height: 80vh;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.192);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactsection > h1 {
+  font-size: 100px;
+  color: rgb(199, 67, 43);
+  margin: 20px;
+}
+
+.contactsection > input {
+  margin: 20px;
+}
+
+.emailbox {
+  width: 20vmax;
+  height: 60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2vmax;
+  text-align: center;
+  outline: none;
+}
+
+.Subjectbox{
+  width: 20vmax;
+  height: 60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2vmax;
+  text-align: center;
+  outline: none;
+}
+
+.messagebox{
+  width: 20vmax;
+  height: 60px;
+  margin: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2vmax;
+  text-align: center;
+  outline: none;
+}
+
+.submit{
+  width: 20vmax;
+  height: 60px;
+  margin: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2vmax;
+  color: white;
+  background-color: rgb(41, 151, 179);
+  border: none;
+  outline: none;
+  transition: 0.3s all ease;
+}
+
+.contactsection > p {
+  font-size: 0.8vmax;
+}
+
+.submit:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid blue;
+}
+
+
+@media screen and (max-width: 600px) {
+  .contactsection > h1 {
+    font-size: 5vmax;
+  }
+
+
+  .emailbox{
+    width: 35vmax;
+    height: 7vmax;
+    font-size: 3vmax;
+  }
+  .Subjectbox{
+      width: 35vmax;
+      height: 7vmax;
+      font-size: 3vmax;
+  }
+  .messagebox{
+    width: 35vmax;
+      height: 7vmax;
+      font-size: 3vmax;
+  }
+  .submit{
+    width: 35vmax;
+      height: 7vmax;
+      font-size: 3vmax;
+  }
+
+  .contactsection > p {
+    font-size: 1.5vmax;
+  }
+}
+
